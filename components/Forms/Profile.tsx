@@ -103,7 +103,7 @@ const Profile = ({ clerkId, user }: Props) => {
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="dark:text-white text-black" />
             </FormItem>
           )}
         />
