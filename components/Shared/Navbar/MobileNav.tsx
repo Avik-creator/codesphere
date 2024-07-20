@@ -28,7 +28,7 @@ const NavContent = () => {
           pathname === item.route;
 
         return (
-          <SheetClose asChild>
+          <SheetClose asChild key={item.label}>
             <Link
               href={item.route}
               className={`${
