@@ -1,7 +1,7 @@
 import type { UserId } from "@/lib/actions/shared.types";
 import { getUserAnswers } from "@/lib/actions/user.action";
 import type { SearchParamsProps } from "@/types/types";
-import AnswerCard from "../card/AnswerCard";
+import AnswerCard from "../Card/AnswerCard";
 import Custom_pagination from "./Custom_pagination";
 
 interface Props extends SearchParamsProps, UserId {

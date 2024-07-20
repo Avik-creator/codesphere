@@ -79,7 +79,7 @@ const MobileNav = () => {
             alt="CodeSphere Logo"
           />
           <p className="h2-bold  text-dark100_light900 font-spaceGrotesk  ">
-            Dev <span className="text-primary-500">Overflow</span>
+            Code<span className="text-primary-500">Sphere</span>
           </p>
         </Link>
 

@@ -1,6 +1,6 @@
 import type { UserId } from "@/lib/actions/shared.types";
 import type { SearchParamsProps } from "@/types/types";
-import QuestionCard from "../card/QuestionCard";
+import QuestionCard from "../Card/QuestionCard";
 import { getUserQuestions } from "@/lib/actions/user.action";
 import Custom_pagination from "./Custom_pagination";
 
