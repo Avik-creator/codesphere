@@ -26,6 +26,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const maxDuration = 300;
+
 export default function RootLayout({
   children,
 }: Readonly<{
