@@ -78,7 +78,7 @@ export async function POST(req: Request) {
     const mongoUser = await updateUser({
       clerkId: id,
       updateData: {
-        name: `${first_name}${last_name}` ? ` ${last_name}` : `${username}`,
+        name: `${first_name}${last_name}`,
         email: email_addresses[0].email_address,
         username: username!, // ! means that it is not null
         picture: image_url,
