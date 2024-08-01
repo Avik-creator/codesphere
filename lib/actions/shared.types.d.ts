@@ -128,6 +128,23 @@ export interface CreateAnswerParams extends Path, Content {
   question: string;
 }
 
+interface AnswerInterface {
+  clerkId: string;
+
+  _id: string;
+  userId: string;
+  upvotes: [];
+  downvotes: [];
+  answers: [];
+  content: string;
+  createdAt: Date;
+  author: {
+    clerkId: string;
+    name: string;
+    picture: string;
+  };
+}
+
 export interface GetAnswersParams
   extends OptionalPage,
     OptionalPageSize,

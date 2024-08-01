@@ -3,6 +3,7 @@
 import Answer from "@/database/answer.model";
 import { connectToDatabase } from "../mongoose";
 import {
+  AnswerInterface,
   AnswerVoteParams,
   CreateAnswerParams,
   DeleteAnswerParams,
@@ -50,7 +51,9 @@ export async function createAnswer(params: CreateAnswerParams) {
   }
 }
 
-export async function getAnswers(params: GetAnswersParams) {
+export async function getAnswers(
+  params: GetAnswersParams
+): Promise<{ answer: AnswerInterface[]; isNext: boolean }> {
   try {
     connectToDatabase();
 
